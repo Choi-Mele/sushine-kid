@@ -1,0 +1,46 @@
+.area-section p{
+  text-align: center;
+}
+
+.area-section .text-box{
+  margin: 40px auto;
+  width: 50%;
+  max-width: 400px;
+}
+
+.area-section figure{
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #eee;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5) ;
+  margin-bottom: 40px !important;
+}
+
+@media screen and (min-width:800px){
+
+  .area-section figure img:first-child{
+    width: 100%;
+  }
+
+  .area-section figure img:last-child{
+    display: none;
+  }
+}/* lg */
+@media screen and (max-width:800px){
+
+  .area-section figure{
+    margin: 0 auto;
+    max-width: 420px;
+  }
+
+  .area-section figure img:last-child{
+    width: 100%;
+  }
+
+  .area-section figure img:first-child{
+    display: none;
+  }
+  
+}/* sm */

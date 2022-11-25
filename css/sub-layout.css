@@ -1,0 +1,197 @@
+/* sub-visual------------------------------------ */
+.sub-visual{
+  background: #000;
+}
+
+@media screen and (min-width:1000px) {
+  .sub-visual{
+    height: 250px;
+  }
+}
+
+@media screen and (max-width:1000px) {
+  .sub-visual{
+    height: 150px;
+  }
+}
+
+/* sub-center ------------------------------------*/
+
+div.sub-center{
+  max-width: 1100px;
+}
+
+div.sub-center .sidebar .snb > ul>li>ul>li>a{
+  text-transform: uppercase;
+}
+
+main.sub-contents{
+  position: relative; /* breadcrumb의 부모기 때문에 position relative 설정 */
+
+}
+
+.snb>ul>li{
+  display: none;
+}
+
+.snb>ul>li>a{
+  display: none;
+}
+
+/* ---------------media @---------------- */
+@media screen and (min-width:1000px) {
+  div.sub-center{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 50px auto;
+    width: 95%; 
+  }
+
+  .breadcrumb{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    top: 10px;right: 0;
+    font-size: 0.8em;
+    color: #aaa;
+  }
+
+  .breadcrumb .menu-label{
+    color:var(--sub-color);
+  }
+
+  .breadcrumb> li::after{
+    content: ' >';
+    margin: 0 4px;
+  }
+
+  .breadcrumb> li:last-child::after{
+    display: none;
+  }
+
+  .snb{
+    margin-bottom: 100px;
+  }
+
+  .snb em{
+    position: relative;
+    text-shadow: 2px 2px 0 #fff;
+    display: block;
+    margin-bottom: 30px;
+    font-size: 1.2em;
+    font-weight: 800;
+    color: var(--dark-color);
+  }
+
+  .snb em i{
+    position: absolute;
+    z-index: -1;
+    font-size: 2em;
+    opacity: 0.2;
+    left: -17px; bottom: 10px;
+  }
+
+  .snb em::first-letter{
+    font-size: 1.2em;
+  }
+
+  .snb > ul>li>ul>li>a{
+    display: block;
+    font-weight: 700;
+    padding: 10px 0;
+    border-bottom: 1px dotted #ccc;
+  }
+
+  .snb > ul>li>ul>li>a.active{
+    color: var(--sub-color);
+  }
+
+  .snb > ul>li>ul>li>a::before{
+    content: "- ";
+  }
+
+  .snb>ul>li>ul>li>a.active::before{
+    content: "\f00c";
+    margin-right : 5px;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+  }
+
+
+  aside.sidebar{
+    position: sticky; /* relative position -> fixed가 되는..  */
+    top: 90px; /* 브라우저기준 탑좌표가 90px가 되었을때 fixed가 되어 탑에 붙어있겠다 */
+    width: 18%;
+  }
+  main.sub-contents{
+    width: 80%;
+  }
+
+  a.sub-customer{
+    display: block;
+  }
+
+  a.sub-customer img{
+    width: 100%;
+  }
+}/* ------------------------snb lg -----------------------------*/
+
+@media screen and (max-width:1000px) {
+  .breadcrumb{
+    display: none;
+  }
+  
+  a.sub-customer{
+    display: none !important;
+  }
+
+  aside.sidebar{
+    height: 45px;
+    background-color: #444;
+  }
+
+  .snb>ul>li>ul{
+    display: flex;
+    justify-content: center;
+  }
+
+  .snb>ul>li>ul>li{
+    flex: 1; /* 알아서 넓이를 가져라! */
+    max-width: 200px;
+    border-right: 1px solid #666;
+  }
+
+  
+  .snb>ul>li>ul>li:last-child{
+    border: none;
+  }
+  
+  .snb>ul>li>ul>li>a{
+    display: block;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 0.9em;
+    background: var(--dark-color);
+    color: #fff;
+  }
+
+  .snb>ul>li>ul>li>a.active{
+    background: var(--sub-color);
+  }
+
+  main.sub-contents{
+    width: 95%;
+    margin: 40px auto; /* marginbottom이 먹지 않은상태 */
+  }
+
+  .snb > ul > li > em{
+    display: none;
+  }
+}/* --------------------------------snb sm */

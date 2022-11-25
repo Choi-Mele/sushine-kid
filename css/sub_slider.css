@@ -1,0 +1,211 @@
+.sub-visual{
+  position: relative;
+  background-color: #fff;
+/*   background: rgb(248, 193, 83);
+  background-image: url(../img/icon_logo/icon-logo.png);
+  background-size: 20px; */
+}
+
+@media screen and (min-width:1000px) {
+  .sub-visual{
+    height: 350px;
+  }  
+}/* lg------------------------------ */
+
+
+@media screen and (max-width:1000px) {
+  .sub-visual{
+    height: 250px;
+  }  
+}/* sm------------------------------ */
+
+.sub-visual figure{
+  position: absolute;/* 피규어와 겹치기 위해서 */
+  width: 100%;
+  height: 100%;
+}
+
+.sub-visual figure:not(.visual1){
+  display: none;
+}
+
+.sub-visual figure img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.sub-visual figure figcaption{
+  position: absolute; /* 이미지와 겹치고 위치를 잡기 위해서 */
+  left: 50%; top: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.sub-visual figure figcaption em{
+  position: relative;
+  display: block;/* transform 하려고 */
+  margin-bottom: 20px;
+  font-size: 3.5em;
+  font-weight: 900;
+  color: #fff;
+  text-shadow: 1px 1px 0 var(--dark-color);
+}
+
+@media screen and (max-width:700px) {
+  .sub-visual figure figcaption em{
+    font-size: 7vw;
+  }
+  
+}
+
+.sub-visual figure figcaption em::before,
+.sub-visual figure figcaption em::after{
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free"; 
+  font-weight: 900; 
+  vertical-align: top;
+  font-size: 0.5em;
+}
+
+
+.sub-visual figure figcaption em::before{
+  content: '\f10d';
+}
+.sub-visual figure figcaption em::after{
+  content: "\f10e";
+}
+
+.sub-visual figure figcaption p{
+  position: relative;
+  padding: 20px;
+  font-size: 0.8em;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 1px 1px 0 var(--dark-color);
+  background: rgba(255,255,255, 0.8);
+  border-radius: 0 5px 0 5px ;
+}
+
+.sub-visual figure figcaption p::before,
+.sub-visual figure figcaption p::after{
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #fff;
+  
+}
+
+.sub-visual figure figcaption p::before{
+  left: -5px; top: -5px;
+  border-right: none;
+  border-bottom: none;
+}
+.sub-visual figure figcaption p::after{
+  right: -5px; bottom: -5px;
+  border-left: none;
+  border-top: none;
+}
+
+
+/* ---------------indicator */
+
+.sub-visual .indicator{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2em;
+  color: #fff;
+  text-shadow: 1px 1px 0 var(--dark-color)
+}
+
+.sub-visual .prev{
+  left: 3%;
+}
+.sub-visual .next{
+  right: 3%;
+}
+
+.sub-visual .controls{
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  transform: translate(-50%);
+}
+
+.sub-visual .controls button{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid var(--sub-color);
+  background: #fff;
+  opacity: 0.7;
+  box-shadow: 0px 0px 0 var(--dark-color)
+
+}
+
+.sub-visual .controls button.active{
+  opacity: 1;
+  background: var(--sub-color);
+  transform: scale(1.2);
+  box-shadow: 1px 1px 0 var(--dark-color);
+}
+
+/* --------- Motion */
+
+.sub-visual figure.active{
+  overflow: hidden;
+}
+
+.sub-visual figure.active figcaption em,
+.sub-visual figure.active figcaption p{
+  animation: jello 1s;
+}
+
+.sub-visual figure.active img{
+  animation: rubberBand 1s;
+}
+
+/* -------- Youtube */
+
+.sub-visual .youtube{
+  position: relative;
+  width: 100%;
+  left: 0;top: 0;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.sub-visual .youtube img{
+  position: relative;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0;
+}
+
+.sub-visual .youtube iframe{
+  position: absolute;
+  left: 50%;top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.2;
+}
+
+@media screen and (min-width:1000px) {
+  .sub-visual .youtube{
+    height: 350px;
+  }
+}
+@media screen and (max-width:1000px) {
+  .sub-visual .youtube{
+    height: 250px;
+  }
+  
+}

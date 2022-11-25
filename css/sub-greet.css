@@ -1,0 +1,79 @@
+.greet-section{
+  text-align: center;
+
+}
+
+.greet-section p{
+  margin: 0 auto;
+  margin-bottom: 30px;
+  width: 90%;
+}
+
+.greet-section p:nth-of-type(1){
+  max-width: 400px;
+}
+.greet-section p:nth-of-type(2){
+  max-width: 700px;
+}
+.greet-section p:nth-of-type(3){
+  max-width: 500px;
+}
+.greet-section p:nth-of-type(4){
+  max-width: 550px; 
+}
+.greet-section p:nth-of-type(5){
+  max-width: 850px;
+}
+
+.greet-section figure{
+  margin-bottom: 30px !important;
+}
+
+
+@media screen and (min-width:800px){
+  .greet-section figure{
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background: #eee;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+  
+  .greet-section figure img{
+    object-fit: cover; /* img의 w, h 다 줘야하는데 flex상황이라 예외적으로 적용이 됨 */
+    object-position: center;
+  }
+  .greet-section figure img:first-child{ /* img, button 는 flex: 1 안됨 */
+    width: 70%;
+  }
+  .greet-section figure img:last-child{ /* img, button 는 flex: 1 안됨 */
+    width: 30%;
+  }
+  
+}
+@media screen and (max-width:800px){
+  .greet-section figure{
+    margin: 0 auto;
+    max-width: 500px;
+  }
+  
+  .greet-section figure img{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 10px;
+    background: #eee;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+
+  .greet-section figure img:first-child{ /* img, button 는 flex: 1 안됨 */
+    width: 100%;
+  }
+  .greet-section figure img:last-child{ /* img, button 는 flex: 1 안됨 */
+    width: 50%;
+    margin: 15px auto;
+  }
+}
+
+

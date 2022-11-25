@@ -1,0 +1,134 @@
+.sub-visual{
+  position: relative;
+}
+
+@media screen and (min-width:1000px) {
+    .sub-visual{
+    height: 250px;
+  }  
+}/* lg------------------------------ */
+
+
+@media screen and (max-width:1000px) {
+  .sub-visual{
+    height: 150px;
+  }  
+}/* sm------------------------------ */
+
+.sub-visual video{ /* reset에서 inline-level인 video를 block으로 바꿔놓음 */
+  position: absolute;
+  top: 0;left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  mix-blend-mode: screen;
+}
+
+/* ---------category visual---------- */
+
+
+.sub-visual figure{
+  position: relative;
+  height: 100%;
+  display: none;
+  overflow: hidden;/* 모션에서 큰 이미지가 생성되면 페이지 자체가 커지기 때문에 설정 */
+}
+
+.sub-visual figure img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(100%);/* 100%가 기본값 , 글자의 가독성때문에*/
+}
+
+.sub-visual figure figcaption{
+  position: absolute;
+  top:50%; left: 50%;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 0 black;
+  transform: translate(-50%,-50%);
+}
+
+.sub-visual figure figcaption em{
+  display: block; /* transform은 inline-level은 적용 안됨*/
+  position: relative;/* z-index를 주기위해 포지션 설정 */
+  z-index: 1; /* p태그가 트랜스폼으로 위로 덮쳐오기에 글자를 위로 빼줌 */
+  font-size: 3em;
+  font-weight: 900;  
+}
+
+@media screen and (max-width:600px){ /* 화면을 움직이면서 제일 부드러운 위치를 찾아보도록하자 */
+  .sub-visual figure figcaption em{ 
+    font-size: 8vw;  /* 제일 작은 화면에서 적당히 vw 값을 찾고 ↑ */
+    font-weight: 900;   
+  }
+}/* sm for font*/
+
+/* 모션!----------------------------------------------- */
+
+.sub-visual figure em,
+.sub-visual figure p{
+  opacity: 0;
+}
+
+.sub-visual figure em{
+  transform: translateX(-100px);
+}
+
+.sub-visual figure p{
+  transform: translateX(100px);
+}
+
+.sub-visual figure img{
+  transform: scale(1.2);
+  filter: brightness(30%);
+}
+
+/* --------------------------------------위는 숨기기 */
+.sub-visual figure.active em,
+.sub-visual figure.active p{
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 0.7s;
+}
+
+.sub-visual figure.active img{
+  transform: scale(1);
+  filter: brightness(100%);
+  transition: transform 20s, filter 3s
+}
+
+
+
+/* ---------------------------------------------------- */
+
+
+.sub-visual figure figcaption p{
+  margin-top: -24px; /* 겹치는효과! */
+  padding: 15px;
+  padding-top: 25px;
+  border-radius: 0 20px 0 20px;
+  border: 2px solid white;
+  background: rgba(255,255,255, 0.7);
+}
+
+@media screen and (max-width:1000px){
+  .sub-visual figure figcaption p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* 글자가 밖으로 삐져나갈경우 어떻게 처리할지 정하는것. ellipsis면 ...으로 생략표시함 */
+  }
+}
+
+
+
+
+
+
+
+

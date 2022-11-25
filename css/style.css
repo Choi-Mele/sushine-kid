@@ -1,0 +1,69 @@
+*{ /* body에서 하면 pre, input, textarea등등에서 상속을 받지 않는 경우가 있어서 *을 사용 
+      but ! 중첩구조시 전부 상속이 되어 불편해지기에, 가장 큰 객체에 폰트 설정을 하고 모든 객체에 상속권을 준다.*/
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: inherit;
+}
+
+body{
+  font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+  color: #444;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+}
+
+h1{
+  font-size: 30px;
+}
+
+.serif{
+  font-family: 'Nanum Myeongjo', serif;
+}
+
+:root{ /* html에 자주쓰는것들을 등록할때 쓰는 변수 */
+  --main-color:#ed1c24;
+  --sub-color:#f69124;
+  --dark-color:#212228;
+}
+
+.sub-title{
+  position: relative;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--sub-color);
+  font-size: 1.4em;
+  font-weight: 800;
+  color: var(--sub-color);
+}
+
+.sub-title::before{
+  display: inline-block;
+  content: "";
+  margin-right: 5px;
+  width: 3px;
+  height: 20px;
+  vertical-align: middle;
+  background-color: #3ec0e7;  
+}
+
+.sub-title::after{
+  position: absolute;
+  content: "";
+  width: 5px;  height: 10px;
+  left: -1px;  top: 0;
+  background-color: var(--main-color);
+}
+
+.emphasis{
+  font-size: 1.15em;
+  font-weight: 600;
+}
+
+.point-color{
+  color: var(--main-color);
+}

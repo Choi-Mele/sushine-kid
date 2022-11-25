@@ -1,0 +1,121 @@
+.site_map, address{
+  margin: 0 auto;
+  padding: 30px 0px;
+  width: 100%;
+}
+
+.site_map{
+  background: var(--sub-color);
+}
+
+.site_map>ul{
+  display: flex;
+  width: 95%;
+  max-width: 1100px;
+  margin: 0 auto;
+  justify-content: space-between;
+  text-transform: uppercase;
+  color: #eee;
+}
+
+.site_map>ul>li{
+  vertical-align: top;
+  text-align: center;
+  font-size: 0.9em;
+}
+.site_map>ul>li>a{
+  font-weight: 600;
+}
+
+.site_map>ul>li>a>i{
+  display: none;
+}
+
+.site_map>ul>li>ul>li{
+  font-size: 0.9em;
+}
+
+
+
+@media screen and (min-width:900px){
+  .site_map>ul>li{
+    flex: 1;
+    border-left: 1px solid rgba(255,255,255,0.2);
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .site_map>ul>li>a{
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .site_map>ul>li.sns>ul{
+    display: flex;
+    justify-content: center;
+  }
+
+  .site_map>ul>li.sns>ul>li{
+    display: block;
+    margin: 0 3px;
+  }
+}/* lg---------------------------- */
+
+@media screen and (min-width:600px) and (max-width:900px){
+  .site_map>ul{
+    justify-content: center;
+  }
+
+  .site_map>ul>li{
+    margin: 0 10px;
+  }
+
+  .site_map>ul>li>ul{
+    display: none;
+  }
+
+
+}/* md---------------------------- */
+
+@media screen and (max-width:600px){
+  footer .site_map{
+    display: none;
+  }
+}/* sm---------------------------- */
+
+
+
+/* ---------------------------------------------------------------- */
+address{
+  background-color: var(--dark-color);
+}
+
+address div{
+  width: 95%;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0.9em;
+  color: #999;
+}
+
+footer address .company{
+  margin-bottom: 10px;
+}
+
+footer address .company i{ /* 줄내림을 위해 */
+  display: inline-block;
+}
+
+footer address .company i::after{
+  content: ' /';
+  margin: 0 2px;
+}
+
+footer address .company i:last-child:after{
+  display: none;
+}
+
+footer address .copy{
+  font-weight: 600;
+}
