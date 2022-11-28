@@ -167,6 +167,10 @@ main.sub-contents{
     border-right: 1px solid #666;
   }
 
+  .snb>ul>li>ul>li{
+    overflow: hidden;
+    border-radius: 0px 5px 0px 5px;
+  }
   
   .snb>ul>li>ul>li:last-child{
     border: none;
@@ -180,6 +184,11 @@ main.sub-contents{
     font-size: 0.9em;
     background: var(--dark-color);
     color: #fff;
+    transition: all 0.2s;
+  }
+
+  .snb>ul>li>ul>li:hover>a{
+    background: var(--main-color) !important;
   }
 
   .snb>ul>li>ul>li>a.active{

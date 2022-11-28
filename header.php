@@ -14,18 +14,22 @@
   <script src="./js/common.js"></script> <!-- 모든 JS의 위에 적용 -->
   <script src="./js/header.js"></script>
  
-  <!-- CSS -->
+  <!-- CSS Main -->
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/board.css">
   <link rel="stylesheet" href="./css/header.css">
   <link rel="stylesheet" href="./css/footer.css">
   <link rel="stylesheet" href="./css/animation.css">
+  <!-- CSS Sub -->
+  <link rel="stylesheet" href="./css/sub-layout.css">
+  <link rel="stylesheet" href="./css/sub_slider.css">
   <link rel="stylesheet" href="./css/sub-greet.css">
   <link rel="stylesheet" href="./css/sub-location.css">
   <link rel="stylesheet" href="./css/sub-biz-intro.css">
   <link rel="stylesheet" href="./css/sub-biz-area.css">
-  <link rel="stylesheet" href="./css/sub-layout.css">
-  <link rel="stylesheet" href="./css/sub_slider.css">
+  <link rel="stylesheet" href="./css/sub-contact.css">
+  <link rel="stylesheet" href="./css/sub-faq.css">
   
   <title>템플릿 사이트 제작</title>
 </head>

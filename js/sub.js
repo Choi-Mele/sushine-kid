@@ -33,7 +33,7 @@ $(function(){
       category = 5; menu = 1;
     }else if(addr.match('freeboard')){
       category = 5; menu = 2;
-    }else if(addr.match('qna')){
+    }else if(addr.match('faq')){
       category = 5; menu = 3;
     }
 

@@ -319,6 +319,12 @@ header > nav > ul> li > ul> li > a{
     transform: rotate(180deg);
   }
 
+  
+  .gnb-sm>ul>li>ul>li:hover>a{
+    background-color: #eee;
+
+  }
+
   .gnb-sm>ul>li>ul>li>a{
     display: block;
     padding: 5px 30px;

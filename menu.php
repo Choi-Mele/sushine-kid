@@ -42,7 +42,7 @@
             <ul>
                 <li><a class="menu5-1"href="./notice.php">공지사항</a></li>
                 <li><a class="menu5-2"href="./freeboard.php">자유게시판</a></li>
-                <li><a class="menu5-3"href="./qna.php">Q&A</a></li>
+                <li><a class="menu5-3"href="./faq.php">FAQ</a></li>
               </ul><!-- 2dep li -->
           </li><!-- 1dep li -->
           <li class="sns">

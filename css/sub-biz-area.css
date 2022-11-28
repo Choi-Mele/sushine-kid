@@ -2,20 +2,31 @@
   text-align: center;
 }
 
-.area-section .text-box{
+.area-section .text-box1,
+.area-section .text-box2{
   margin: 40px auto;
+  padding: 30px;
+}
+
+.area-section .text-box1{
   width: 50%;
   max-width: 400px;
+}
+
+.area-section .text-box2{
+  width: 60%;
+  max-width: 600px
 }
 
 .area-section figure{
   border-radius: 5px;
   box-sizing: border-box;
   padding: 10px;
-  width: 100%;
+  width: 80%;
   border: 1px solid #eee;
   box-shadow: 0 0 10px rgba(0,0,0,0.5) ;
-  margin-bottom: 40px !important;
+  margin: 40px auto !important;
+  margin-top: 50px;
 }
 
 @media screen and (min-width:800px){

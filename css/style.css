@@ -67,3 +67,29 @@ h1{
 .point-color{
   color: var(--main-color);
 }
+
+.form-btn{
+  padding: 7px 15px;
+  border-radius: 5px;
+  transition: all 0.3s;
+  color: #fff;
+}
+
+.btn-style1{
+  color: #fff;
+  background: var(--sub-color);
+}
+
+.btn-style1:hover{
+  color: #fff;
+  background: var(--main-color);
+}
+
+.btn-style2{
+  color: #fff;
+  background: #777;
+}
+.btn-style2:hover{
+  color: #fff;
+  background: var(--dark-color);
+}
