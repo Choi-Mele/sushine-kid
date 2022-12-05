@@ -9,6 +9,7 @@
 }
 
 .main-title h2{
+  position: relative;
   margin-bottom: 10px;
   text-transform: uppercase;
   font-size: 2em;
@@ -16,11 +17,24 @@
   color: var(--main-color);
 }
 
+.main-title h2 .addTypeEffectCursor{ /* 부모하고 자식의 크기가 다를때 이걸 적용할 것. */
+  width: 100%;
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%,-50%) !important;
+
+  /* 
+    width: 100%; 
+    left: 0px !important;
+    top: 0px !important;
+  */
+}
+
 .main-title::before{
   content: '';
   display: block;
   margin: 0 auto;
-  width: 70px;
+  width: 75px;
   height: 4px;
   background: var(--main-color);
 }
@@ -37,17 +51,113 @@
   width: 95%;
   max-width: 1100px;
   margin: 0 auto;
-  background: rgb(238, 203, 150);
+
 }
 
+.home-section1 ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.home-section1 ul li{
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+}
+
+.home-section1 ul li figure{
+  position: relative;  
+}
+.home-section1 ul li figure::before{
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+.home-section1 ul li figure img{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  /* preFix -webkit- -o- -mozilla- */
+  -webkit-mask-image: url(../img/icon_logo/polygon.png);
+/*   -webkit-mask-size: 100%; */
+  -webkit-mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-image: url(../img/icon_logo/polygon.png);
+ /*  mask-size: 100%; */
+  mask-position: center;
+  mask-repeat: no-repeat;
+}
+
+.home-section1 ul li figure svg{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.home-section1 ul li figure svg path{
+  fill: none;
+  stroke: var(--main-color);
+  stroke-width: 5px;
+  stroke-linecap: round;
+}
+
+.home-section1 ul li h3{
+  margin: 10px 0;
+  margin-top: 0;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 1.1em;
+  color: rgba(255,255,255,0.9);
+  border-radius: 15px;
+  background-color: var(--main-color);
+}
+.home-section1 ul li p{
+  font-size: 0.8em;
+}
 
 
 @media screen and (min-width:1000px){
-  
+  .home-section1 ul li{
+    width: 25%;
+  }
 }
 @media screen and (min-width:500px) and (max-width:1000px){
+  .home-section1 ul li{
+    width: 50%;
+  }
   
 }
 @media screen and (max-width:500px){
+  .home-section1 ul li{
+    width: 100%;
+  }
   
+}
+
+/* section1 motion */
+
+.home-section1 li path{
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  transition: stroke-dashoffset 1s linear;
+}
+
+.home-section1 li.active path{
+  stroke-dashoffset: 0;
+}
+
+.home-section1 li img{
+  -webkit-mask-size: 0%;
+  mask-size: 0%;
+  transition: all 1s;
+}
+
+.home-section1 li.active img{
+  -webkit-mask-size: 100%;
+  mask-size: 100%;
 }

@@ -18,6 +18,7 @@
   <script src="./js/jquery.justifiedGallery.min.js"></script> <!-- plugin은 중앙에 설치 -->
   <script src="./js/masonry-docs.min.js"></script> <!-- plugin은 중앙에 설치 -->
   <script src="./js/responsive_carousel_horz.js"></script> <!-- plugin은 중앙에 설치 -->
+  <script src="./js/type_effect.js"></script> <!-- plugin은 중앙에 설치 -->
   <script src="./js/bubble.js"></script> <!-- plugin은 중앙에 설치 -->
   <script src="./js/tweenmax.js"></script>
   <script src="./js/morphsvg.js"></script>
