@@ -45,7 +45,7 @@ footer address>p.copy{
 }
 
 
-.site_map em{
+.site_map em, .site_map .category6{
   display: none;
 }
 

@@ -68,7 +68,7 @@ header > nav > ul> li > ul> li > a{
 
 
 
-.gnb li.sns, .gnb em{
+.gnb li.sns, .gnb em,.gnb li.category6{
   display: none;
 }
 
@@ -180,6 +180,22 @@ header > nav > ul> li > ul> li > a{
     background: rgba(255,255,255,0.9);
   }
 
+  .gnb-lg svg{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    height: 25px;
+  }
+
+  .gnb-lg svg path{
+    fill:rgba(255,255,255,0.9);
+  }
+
+  .gnb-lg svg path:not(.bar){
+    display: none;
+  }
+
   .gnb-lg>ul{
     position: relative;
     display: flex;
@@ -268,27 +284,47 @@ header > nav > ul> li > ul> li > a{
     background: rgba(0,0,0,0.6);
   }
 
-  .gnb-sm.active>ul{
+  .gnb-sm.active .inner{
     transform: translateX(0);
   }
 
-  .gnb-sm>ul{
+  .gnb-sm .inner{
     position: absolute;
-    box-sizing: border-box;
-    padding-top: 150px;
-    right: 0;top: 0;
+    right: 0;top:0;
     width: 70%;
-    height: 100%;
     max-width: 300px;
-    background: var(--sub-color);
+    height: 100%;
     transform: translateX(100%);
     transition: all 0.5s;
   }
-  .gnb-sm>ul>li>ul{
+
+  .gnb-sm .inner svg{
+    position: absolute;
+    width: 40px;
+    height: 100%;
+    top:0;
+    right: 100%;
+  }
+
+  .gnb-sm .inner svg path{ 
+    fill:var(--sub-color);
+  }
+  .gnb-sm .inner svg path:not(.bar){
     display: none;
   }
 
-  .gnb-sm>ul>li>a{
+  .gnb-sm .inner>ul{
+    width: 100%;
+    height: 100%;
+    padding-top: 150px;
+    box-sizing: border-box;
+    background: var(--sub-color);
+  }
+  .gnb-sm .inner>ul>li>ul{
+    display: none;
+  }
+
+  .gnb-sm .inner>ul>li>a{
     display: block;
     padding: 7px 15px;
     color: #fff;  
@@ -298,11 +334,11 @@ header > nav > ul> li > ul> li > a{
     font-size: 0.9em;
   }
 
-  .gnb-sm>ul>li>a.active{
+  .gnb-sm .inner>ul>li>a.active{
     background: var(--dark-color);
   }
 
-  .gnb-sm>ul>li>a::after{
+  .gnb-sm .inner>ul>li>a::after{
     float: right;
     display: inline-block;
     font-style: normal;
@@ -315,17 +351,17 @@ header > nav > ul> li > ul> li > a{
     transition: all 0.2s;
   }
 
-  .gnb-sm>ul>li>a.active::after{
+  .gnb-sm .inner>ul>li>a.active::after{
     transform: rotate(180deg);
   }
 
   
-  .gnb-sm>ul>li>ul>li:hover>a{
+  .gnb-sm .inner>ul>li>ul>li:hover>a{
     background-color: #eee;
 
   }
 
-  .gnb-sm>ul>li>ul>li>a{
+  .gnb-sm .inner>ul>li>ul>li>a{
     display: block;
     padding: 5px 30px;
     color: var(--sub-color);

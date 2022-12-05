@@ -1,0 +1,196 @@
+/* home_visual ----------------------------*/
+
+.home-visual{
+  height: 50%;
+}
+
+.home-visual .slider{
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.home-visual .slider .slider-bg{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(90%);
+  animation: sky 10s linear infinite alternate; /* linear 평속 유지, infinite 무한반복, alternate 핑퐁 */
+}
+
+@keyframes sky {
+  0%{
+    transform: scale(1.2);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+.home-visual .bubble{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+
+.home-visual .slider .indicator{
+  position: absolute;
+  display: flex; 
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+}
+
+.home-visual .slider .indicator button{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 5px;
+  background-color: #eee;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+.home-visual .slider .indicator button.active{
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+.home-visual .slider .cursor{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #Eee;
+  font-size: 2em;
+  opacity: 0.7;
+  text-shadow: 2px 2px 0 #111;
+  transition: all 0.3s;
+}
+
+.home-visual .slider .cursor:hover{
+  opacity: 1;
+}
+
+.home-visual .slider .prev{left: 2%;}
+.home-visual .slider .next{right: 2%;}
+
+
+.home-visual .slider .col_width{
+  position: relative;
+  margin: 0px auto;
+  height: 100%;
+}
+
+@media screen and (min-width:1000px) {
+  .home-visual .slider .col_width{
+    width: 33.333%;
+  }
+}
+@media screen and (min-width:600px) and (max-width:1000px) {
+  .home-visual .slider .col_width{
+    width: 50%;
+  }
+  
+}
+@media screen and (max-width:600px) {
+  .home-visual .slider .col_width{
+    width: 100%;
+  }
+
+}
+
+.home-visual .slider .col_width .img_container{
+  position: relative;
+  display: flex;
+  width: 400%;
+  height: 100%;
+  cursor: grab;
+}
+.home-visual .slider .col_width .img_container:active{
+  cursor: grabbing;
+}
+
+.home-visual .slider .col_width .img_container li{/* flex:1 은 작동되지 않는 플러그인 */
+  box-sizing: border-box;
+  padding: 10px;
+  width: 25%;
+  height: 100%;
+}
+
+.home-visual .slider .col_width .img_container li figure.inner{
+  position: relative;
+  height: 100%;
+}
+
+.home-visual .slider .col_width .img_container li figure.inner img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 15px;
+}
+
+.home-visual .slider .col_width .img_container li figure.inner figcaption{
+  position: absolute;
+  width: 80%;
+  left: 50%; top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.home-visual .slider .col_width .img_container li figure.inner figcaption em{
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  font-weight: 800;
+  color: #eee;
+  letter-spacing: 0.2em;
+  text-shadow: 2px 2px 0 #111;
+}
+
+.home-visual .slider .col_width .img_container li figure.inner figcaption p{
+  font-size: 0.9em;
+  font-weight: 600;
+  color: #eee;
+}
+
+
+/* -----------active motion--------- */
+
+.home-visual .slider .col_width .img_container li figure{
+ transform: scale(0.8);
+ transition: all 0.4s; 
+}
+
+.home-visual .slider .col_width .img_container li.active figure{
+  transform: scale(1);
+}
+
+.home-visual .slider .col_width .img_container li figure img{
+  filter: blur(3px);
+}
+
+.home-visual .slider .col_width .img_container li.active figure img{
+  animation: rubberBand 1s;
+  filter: blur(0);
+}
+
+.home-visual .slider .col_width .img_container li figure.inner figcaption *{
+  opacity: 0;
+  transition: all 1s;
+}
+
+.home-visual .slider .col_width .img_container li figure.inner figcaption em{
+  transform: translateY(-50px);
+}
+
+.home-visual .slider .col_width .img_container li figure.inner figcaption p{
+  transform: translateY(50px);
+}
+.home-visual .slider .col_width .img_container li.active figure.inner figcaption *{
+  opacity: 1;
+  transform: translateY(0);
+}

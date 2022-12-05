@@ -185,3 +185,81 @@ window.faqArr = [
   },
 
 ]
+
+window.galleryArr = [
+  {
+    title : '비행기',
+    desc : '아이의 창의력을 길러주세요',
+    path : './img/gallery/1.jpg',
+    path2 : './img/gallery/1copy.jpg',
+    class : 'category1 category2'
+  },
+  {
+    title : '소중한 손',
+    desc : '이 작고 귀여운 손에 행복을 쥐어줄 수 있기를 바라봅니다',
+    path : './img/gallery/2.jpg',
+    path2 : './img/gallery/2copy.jpg',
+    class : 'category2 category3'
+  },
+  {
+    title : '귀여운 아가',
+    desc : '오늘도 활짝 웃는 귀여운 우리의 미래입니다',
+    path : './img/gallery/3.jpg',
+    path2 : './img/gallery/3copy.jpg',
+    class : 'category1 '
+  },
+  {
+    title : '친환경 이유식',
+    desc : '좋고 맛있는 이유식은 아이를 웃게 합니다',
+    path : './img/gallery/4.jpg',
+    path2 : './img/gallery/4copy.jpg',
+    class : 'category3'
+  },
+  {
+    title : '장난꾸러기',
+    desc : '아이의 장난을 웃으며 받아주세요! 아이의 정서발달에 도움이 됩니다',
+    path : './img/gallery/5.jpg',
+    path2 : './img/gallery/5copy.jpg',
+    class : 'category1 category2 category3'
+  },
+  {
+    title : '만세!!',
+    desc : '어쩌면 안기려고 하는걸지도 몰라요. 같이 만세한 뒤 안아주세요',
+    path : './img/gallery/6.jpg',
+    path2 : './img/gallery/6copy.jpg',
+    class : 'category1 category3'
+  },
+  {
+    title : '소중한 손',
+    desc : '이 작고 귀여운 손에 행복을 한웅큼 쥐어준다면 얼마나 좋을까요',
+    path : './img/gallery/7.jpg',
+    path2 : './img/gallery/7copy.jpg',
+    class : 'category2 category3'
+  },
+  {
+    title : '맛있는 식사',
+    desc : '짜고 달지 않은 하지만 맛은 보장된 그런 이유식! 엄마의 손맛 그대로 정성가득!',
+    path : './img/gallery/8.jpg',
+    path2 : './img/gallery/8copy.jpg',
+    class : 'category2 category3'
+  },
+  {
+    title : '비행기',
+    desc : '아이의 창의력을 길러주세요.',
+    path : './img/gallery/9.jpg',
+    path2 : './img/gallery/9copy.jpg',
+    class : 'category1'
+  },
+]
+
+window.videoArr = [
+  'TzNQs85fL1w',
+  'sb7v-d-R11E',
+  'pueV4pDpGWA',
+  '_zGGyUCl5bI',
+  'A02QxdAKrRU',
+  'z26zbiGJnd4',
+  'uNPO8nbQQks',
+  'RtWHq3lulGs',
+  'oftTZGXsRQw',
+]

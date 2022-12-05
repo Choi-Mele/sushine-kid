@@ -29,6 +29,7 @@ h1{
   --main-color:#ed1c24;
   --sub-color:#f69124;
   --dark-color:#212228;
+  --blue-color:rgb(111, 197, 255);
 }
 
 .sub-title{
@@ -44,11 +45,11 @@ h1{
 .sub-title::before{
   display: inline-block;
   content: "";
-  margin-right: 5px;
+  margin-right: 10px;
   width: 3px;
   height: 20px;
   vertical-align: middle;
-  background-color: #3ec0e7;  
+  background-color: var(--blue-color);  
 }
 
 .sub-title::after{
@@ -62,6 +63,11 @@ h1{
 .emphasis{
   font-size: 1.15em;
   font-weight: 600;
+}
+
+.weak{
+  font-size: 0.8em;
+  color: #888;
 }
 
 .point-color{

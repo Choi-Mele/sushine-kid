@@ -34,25 +34,29 @@ $(function(){
   /* gnb-lg--------------------------------------------------------------------------------- */
   $(`.gnb-lg>ul`).mouseenter(function(){
     $(`.gnb-lg>ul>li>ul`).stop().slideDown(300)
+    TweenMax.to(".gnb-lg svg .bar",0.8,{morphSVG:".gnb-lg svg .triangle",ease:Linear.easeNone})
   })
   $(`.gnb-lg`).mouseleave(function(){
     $(`.gnb-lg>ul>li>ul`).stop().slideUp(300)
+    TweenMax.to(".gnb-lg svg .bar",0.3,{morphSVG:".gnb-lg svg .barCopy",ease:Linear.easeNone})
   })
 
   //-----------------------------------------------
 
-  $(`.mbtn`).click(function(){
+  $('.mbtn').click(function () {
     $(this).toggleClass('active')
-    $(`.gnb-sm`).stop().fadeToggle().toggleClass('active')
-    $('.gnb-sm>ul>li>ul').stop().slideUp()
-    $('.gnb-sm>ul>li>a').removeClass('active')
+    $('.gnb-sm').stop().fadeToggle().toggleClass('active')
+    TweenMax.to(".gnb-sm.active .inner .bar",0.8,{morphSVG:".gnb-sm .inner .triangle",ease:Elastic.easeIn})
+    TweenMax.to(".gnb-sm:not(.active) .inner .bar",0.3,{morphSVG:".gnb-sm .inner .barCopy",ease:Elastic.easeIn})
+    $('.gnb-sm .inner>ul>li>ul').stop().slideUp()
+    $('.gnb-sm .inner>ul>li>a').removeClass('active')
   })
 
-  $(`.gnb-sm>ul>li>a`).click(function(e){
+  $('.gnb-sm .inner>ul>li>a').click(function (e) {
     e.preventDefault()
-    $(`.gnb-sm>ul>li>ul`).stop().slideUp()
+    $('.gnb-sm .inner>ul>li>ul').stop().slideUp()
     $(this).siblings('ul').stop().slideToggle()
-    $('.gnb-sm>ul>li>a').not($(this)).removeClass('active')
+    $('.gnb-sm .inner>ul>li>a').not($(this)).removeClass('active')
     $(this).toggleClass('active')
   })//click menu
 

@@ -1,6 +1,7 @@
 .location-section .info-box,
 .company-map{
-  margin: 40px auto;
+  padding: 15px;
+  margin: 30px auto;
   border: 1px solid #eee;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
@@ -8,10 +9,28 @@
 }
 
 .company-map{
-  width: 95%;
-  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 30px;
+  max-width: 700px;
+}
+
+.company-map nav{
+  margin-bottom: 30px;
+  height: 45px;
   box-sizing: border-box;
-  overflow: hidden;
+  border-bottom: 1px solid var(--sub-color);
+}
+
+.company-map nav button{
+  height: 45px;
+  padding: 0 25px;
+  border: 1px solid var(--sub-color);
+  color: var(--sub-color);
+  transition: all 0.3s;
+}
+
+.company-map nav button.active{
+  border-bottom: 1px solid #fff;
 }
 
 .location-section .info-box{
@@ -26,12 +45,28 @@
   box-sizing: border-box;
   border-radius: 5px;
   background: var(--sub-color);
+  color: #fff;
   text-align: center;
+}
+.location-section .info-box dt i{
+  margin-right: 5px;
 }
 
 .location-section .info-box dd{
   margin: 20px 0;
   padding: 5px 0;
+}
+
+.location-section .company-map iframe,
+.location-section .company-map img{
+  width: 100%;
+  height: 400px;
+}
+  
+.location-section .company-map img{
+  display: none;
+  object-fit: cover;
+  object-position: center;
 }
 
 @media screen and (min-width:1000px) {

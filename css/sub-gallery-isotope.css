@@ -1,0 +1,112 @@
+.isotope-gallery-section .btn-grp{
+  position: sticky;
+  z-index: 3;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+@media screen and (min-width:1000px){
+  .isotope-gallery-section .btn-grp{
+    top: 75px;
+  }
+}
+@media screen and (max-width:1000px){
+  .isotope-gallery-section .btn-grp{
+    top: 90px;
+  }
+}
+
+.isotope-gallery-section .btn-grp button{
+  margin: 0 2px;
+  padding: 7px 15px;
+  border: 1px solid var(--main-color);
+  border-radius: 30px;
+  color: var(--main-color);
+  background: rgba(255,255,255,0.9);
+}
+
+.isotope-gallery-section .btn-grp button.active{
+  background: var(--main-color);
+  color: #fff;
+}
+
+@media screen and (max-width:600px){
+  .isotope-gallery-section .btn-grp button{
+    width: 100%;
+    margin: 5px 0px;
+  }
+}
+
+.isotope-gallery-section ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+.isotope-gallery-section ul li{
+  padding: 10px;
+  box-sizing: border-box;
+}
+.isotope-gallery-section ul li a{
+  display: block;
+}
+.isotope-gallery-section ul li a h3{
+  margin-bottom: 10px;
+  padding: 7px;
+  border-radius: 10px;
+  text-align: center;
+  background: var(--dark-color);
+  color: #fff;
+}
+.isotope-gallery-section ul li a p{
+  margin-top: 10px;
+  padding: 7px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 0.9em;
+  background: #777;
+  color: #fff;
+}
+
+.isotope-gallery-section ul li:nth-child(odd) a figure{
+  border-radius: 50%;
+}
+.isotope-gallery-section ul li:nth-child(even) a figure{
+  border-radius: 20px;
+}
+
+.isotope-gallery-section ul li a figure{
+  position: relative;
+  border: 5px solid var(--sub-color);
+  overflow: hidden;
+}
+.isotope-gallery-section ul li a figure::before{
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+.isotope-gallery-section ul li a figure img{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media screen and (min-width:1000px) {
+  .isotope-gallery-section ul li{
+    width: 33.3%;
+  }
+  
+}
+@media screen and (min-width:600px) and (max-width:1000px) {
+  .isotope-gallery-section ul li{
+    width: 49.9%;
+  }
+  
+}
+@media screen and (max-width:600px) {
+  .isotope-gallery-section ul li{
+    width: 100%;
+  }
+  
+}

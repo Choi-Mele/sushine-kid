@@ -10,6 +10,15 @@
   margin: 10px;
   padding: 4px;
   flex: 1;
+  transition: all 0.3s;
+}
+
+.contact-section form p input:focus,
+.contact-section form p textarea:focus{
+  background: var(--sub-color);
+  color: #fff;
+  border: none;
+
 }
 
 .contact-section form p:last-child{

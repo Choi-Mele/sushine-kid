@@ -1,0 +1,77 @@
+.masonry-gallery-section ul li{
+  box-sizing: border-box;
+  padding: 1px;
+}
+
+.masonry-gallery-section ul li figure{
+  padding: 3px;
+  background-color: var(--blue-color);  
+}
+
+.masonry-gallery-section ul li figure a{
+
+}
+
+.masonry-gallery-section ul li figure a div{
+  overflow: hidden;
+}
+
+.masonry-gallery-section ul li figure a div img{
+  width: 100%; 
+}
+
+.masonry-gallery-section ul li figure a figcaption{
+  background: var(--blue-color);  
+  padding: 15px;
+}
+
+.masonry-gallery-section ul li figure a figcaption h3{
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+}
+
+.masonry-gallery-section ul li figure a figcaption p{
+  font-size: 0.9em;
+  color: rgba(255,255,255,0.7);
+}
+
+
+@media screen and (min-width:1000px) {
+  .masonry-gallery-section ul li{
+    width: 33.33%;
+  }
+}/* lg */
+
+@media screen and (min-width:600px) and (max-width:1000px) {
+  .masonry-gallery-section ul li{
+    width: 50%;
+  }
+  
+}/* md */
+
+@media screen and (max-width:600px) {
+  .masonry-gallery-section ul li{
+    width: 100%;
+  }
+  
+}/* sm */
+
+/* ----------------------hover Motion */
+
+.masonry-gallery-section ul li a{
+  display: block;
+  overflow: hidden;
+}
+.masonry-gallery-section ul li a div{
+  transition: all 0.3s;
+}
+
+.masonry-gallery-section ul li a div:hover{
+  transform: scale(1.5);
+}
+
+.masonry-gallery-section ul li a figcaption{
+  position: relative;
+  z-index: 1;
+}

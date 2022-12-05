@@ -19,14 +19,22 @@ $(function(){
 
     if(addr.match('greet')){
       category = 1; menu = 1; // 1-1 이라는 뜻
-    }else if(addr.match('location')){
+    }else if(addr.match('video')){
       category = 1; menu = 2;
+    }else if(addr.match('location')){
+      category = 1; menu = 3;
     }else if(addr.match('biz_intro')){
       category = 2; menu = 1;
     }else if(addr.match('biz_area')){
       category = 2; menu = 2;
-    }else if(addr.match('gallery-simple')){
+    }else if(addr.match('gallery-viewbox')){
       category = 3; menu = 1;
+    }else if(addr.match('gallery-justify')){
+      category = 3; menu = 2;
+    }else if(addr.match('gallery-masonry')){
+      category = 3; menu = 3;
+    }else if(addr.match('gallery-isotope')){
+      category = 3; menu = 4;
     }else if(addr.match('contact')){
       category = 4; menu = 1;
     }else if(addr.match('notice')){
@@ -35,13 +43,19 @@ $(function(){
       category = 5; menu = 2;
     }else if(addr.match('faq')){
       category = 5; menu = 3;
+    }else if(addr.match('registration')){
+      category = 6; menu = 1;
+    }else if(addr.match('login')){
+      category = 6; menu = 2;
     }
 
     $(`.snb .category${category}`).show()
     $(`.snb .menu${category}-${menu}`).addClass('active')
     
+    
     var categoryLabel = $(`.snb .category${category} em`).text()
     $(`.breadcrumb .category-label`).text(categoryLabel)
+    
     var menuLabel = $(`.snb .menu${category}-${menu}`).text()
     $(`.breadcrumb .menu-label`).text(menuLabel)
 
