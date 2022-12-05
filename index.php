@@ -42,7 +42,13 @@
     </script>
 
   <main>
-    FirstPage Index
+    <section class="home-section home-section1">
+      <div class="main-title">
+        <h2>quick menu</h2>
+        <p>메뉴를 클릭하시면 해당 메뉴로 이동합니다</p>
+      </div>
+    
+    </section>
   </main>
 
 

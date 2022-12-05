@@ -263,3 +263,30 @@ window.videoArr = [
   'RtWHq3lulGs',
   'oftTZGXsRQw',
 ]
+
+window.quickMenuArr = [
+  {
+    url : './biz_intro.php',
+    title : 'BUSINESS INFO',
+    desc : '회사만의 세분화된 사업영역을 바탕으로 최고의 비지니스를 제안합니다',
+    path : './img/gallery/1.jpg',
+  },
+  {
+    url : './contact.php',
+    title : 'ONLINE INFO',
+    desc : '온라인 무료상담 및 견적받기로 빠르고 효율적인 상담을 받으세요.',
+    path : './img/gallery/2.jpg',
+  },
+  {
+    url : './biz_area.php',
+    title : 'PRODUCT INFO',
+    desc : '최고의 기술력과 최상의 품질, 착한 가격으로 보답하여 드리겠습니다.',
+    path : './img/gallery/6.jpg',
+  },
+  {
+    url : './location.php',
+    title : 'LOCATION INFO',
+    desc : '당사로 찾아오시는 길을 상세하게 안내해 드리겠습니다.',
+    path : './img/gallery/8.jpg',
+  },
+]
