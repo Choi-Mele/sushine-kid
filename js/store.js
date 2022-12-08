@@ -189,7 +189,7 @@ window.faqArr = [
 window.galleryArr = [
   {
     title : '비행기',
-    desc : '아이의 창의력을 길러주세요',
+    desc : '아이의 창의력을 길러주세요. <br> 생각은 또다른 자산입니다',
     path : './img/gallery/1.jpg',
     path2 : './img/gallery/1copy.jpg',
     class : 'category1 category2'
@@ -203,49 +203,49 @@ window.galleryArr = [
   },
   {
     title : '귀여운 아가',
-    desc : '오늘도 활짝 웃는 귀여운 우리의 미래입니다',
+    desc : '오늘도 활짝 웃는 저 아이의 귀여운 미소는 우리의 밝은 미래가 됩니다',
     path : './img/gallery/3.jpg',
     path2 : './img/gallery/3copy.jpg',
     class : 'category1 '
   },
   {
     title : '친환경 이유식',
-    desc : '좋고 맛있는 이유식은 아이를 웃게 합니다',
+    desc : '맛있고 좋은 이유식은 <br> 아이의 성장과 발달에 큰 영향을 줍니다',
     path : './img/gallery/4.jpg',
     path2 : './img/gallery/4copy.jpg',
     class : 'category3'
   },
   {
     title : '장난꾸러기',
-    desc : '아이의 장난을 웃으며 받아주세요! 아이의 정서발달에 도움이 됩니다',
+    desc : '아이의 장난을 웃으며 받아주세요! <br> 아이의 정서발달에 도움이 됩니다',
     path : './img/gallery/5.jpg',
     path2 : './img/gallery/5copy.jpg',
     class : 'category1 category2 category3'
   },
   {
     title : '만세!!',
-    desc : '어쩌면 안기려고 하는걸지도 몰라요. 같이 만세한 뒤 안아주세요',
+    desc : '어쩌면 안기려고 하는걸지도 몰라요.  <br> 같이 만세한 뒤 안아주세요',
     path : './img/gallery/6.jpg',
     path2 : './img/gallery/6copy.jpg',
     class : 'category1 category3'
   },
   {
     title : '소중한 손',
-    desc : '이 작고 귀여운 손에 행복을 한웅큼 쥐어준다면 얼마나 좋을까요',
+    desc : '이 작고 귀여운 손에 <br>행복을 한웅큼 쥐어준다면 얼마나 좋을까요',
     path : './img/gallery/7.jpg',
     path2 : './img/gallery/7copy.jpg',
     class : 'category2 category3'
   },
   {
     title : '맛있는 식사',
-    desc : '짜고 달지 않은 하지만 맛은 보장된 그런 이유식! 엄마의 손맛 그대로 정성가득!',
+    desc : '짜고 달지 않은 하지만 맛있는 그런 이유식! <br> 엄마의 손 맛 그대로 정성가득!',
     path : './img/gallery/8.jpg',
     path2 : './img/gallery/8copy.jpg',
     class : 'category2 category3'
   },
   {
     title : '비행기',
-    desc : '아이의 창의력을 길러주세요.',
+    desc : '손을 많이 쓰게 해주세요. <br> 아이의 감각이 더욱 발달 할 것입니다.',
     path : './img/gallery/9.jpg',
     path2 : './img/gallery/9copy.jpg',
     class : 'category1'
@@ -288,5 +288,32 @@ window.quickMenuArr = [
     title : 'LOCATION INFO',
     desc : '당사로 찾아오시는 길을 상세하게 안내해 드리겠습니다.',
     path : './img/gallery/8.jpg',
+  },
+]
+
+window.csArr = [
+  {
+    icon : '<i class="fa-solid fa-volume-high"></i>',
+    title : '공지사항',
+    desc : '선샤인에서 전하는 공지사항입니다',
+    url: './notice.php',
+  },
+  {
+    icon : '<i class="fa-solid fa-clipboard-question"></i>',
+    title : '고객문의',
+    desc : '질문을 남겨주시면 답변드리겠습니다',
+    url: './freeboard.php',
+  },
+  {
+    icon : '<i class="fa-regular fa-building"></i>',
+    title : '회사소개',
+    desc : '선샤인은 고객만족을 최우선으로 생각합니다',
+    url: './biz_intro.php',
+  },
+  {
+    icon : '<i class="fa-solid fa-location-dot"></i>',
+    title : '오시는길',
+    desc : '당사로 오시는 길을 안내해 드리겠습니다',
+    url: './location.php',
   },
 ]

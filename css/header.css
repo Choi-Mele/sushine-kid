@@ -268,7 +268,7 @@ header > nav > ul> li > ul> li > a{
   }
   
   .top-btn{
-    display: none ;
+    display: none !important;
   }
 
   .gnb-lg{

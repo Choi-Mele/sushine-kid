@@ -20,7 +20,7 @@
   </script>
   
   <div class="youtube">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/6u9sR_PLJN0?&playlist=6u9sR_PLJN0&vq=highres&iv_load_policy=3&autoplay=1&mute=1&loop=1&rel=0&showinfo=0&color=white&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/6u9sR_PLJN0?&playlist=6u9sR_PLJN0&vq=highres&iv_load_policy=3&autoplay=1&mute=1&loop=1&rel=0&showinfo=0&color=white&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <img src="./img/youtube/560315.jpg">
   </div>
   

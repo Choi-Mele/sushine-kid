@@ -4,26 +4,55 @@ $(function () {
 
   /* -----------------section1 motion ------------------------ */
   
-  var type1 = new Type_effect('#type1',70)
-
+  var type1 = new Type_effect('.home-section1 h2',100)
+  var type2 = new Type_effect('.home-section2 h2',100)
+  var type3 = new Type_effect('.home-section3 h2',100)
+ 
   type1.play()
 
-  function home_section1(){
+  function home_section(){
     
-    $('.home-section1 li').each(function(){
+    $('.home-section1 li, .home-section2 li').each(function(){
      var t = $(this).offset().top
      if(scrY >= t - winH*0.8){
       $(this).addClass('active')
     }else{
       $(this).removeClass('active')
      }
-    })//if
+    })// home_section1,  home_section2
+
+
+
+    $('.home-section3 li').each(function(){
+     var t = $(this).offset().top
+     var h = $(this).innerHeight()
+     var meta = 0 + (scrY - (t - winH*0.5 + h*0.5))*0.08
+     $(this).find('img').css({'transform':`scale(1.4) translateY(${meta}px)`})
+    })//home_section3
+
+    var t = $('.home-section2 h2').offset().top
+    if(scrY > t - winH * 0.8){
+      type2.play()
+    }else{
+      type2.reverse()
+    }//if
+    
+    var t = $('.home-section3 h2').offset().top
+    if(scrY > t - winH * 0.8){
+      type3.play()
+    }else{
+      type3.reverse()
+    }//if
+
+
   }//fn home_section1
 
-  home_section1()
+
+
+  home_section()
   $(window).scroll(function(){
-    home_section1()
+    home_section()
   }).resize(function(){
-    home_section1()
+    home_section()
   })
 }); //ready

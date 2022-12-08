@@ -12,6 +12,11 @@ $(function(){
       str.match('마') // null 출력
   */
 
+    if(isMobile){
+      $('.sub-visual .youtube iframe').hide()
+    }
+
+
     var addr = location.href
 
     var category 

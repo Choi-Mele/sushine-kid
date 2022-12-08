@@ -146,7 +146,7 @@
   margin-bottom: 10px;
   font-size: 1.5em;
   font-weight: 800;
-  color: #eee;
+  color: #fff;
   letter-spacing: 0.2em;
   text-shadow: 2px 2px 0 #111;
 }
@@ -154,7 +154,7 @@
 .home-visual .slider .col_width .img_container li figure.inner figcaption p{
   font-size: 0.9em;
   font-weight: 600;
-  color: #eee;
+  color: #fff;
 }
 
 

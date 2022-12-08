@@ -17,18 +17,18 @@
   color: var(--main-color);
 }
 
-.main-title h2 .addTypeEffectCursor{ /* 부모하고 자식의 크기가 다를때 이걸 적용할 것. */
+/* .main-title h2 .addTypeEffectCursor{ /* 부모하고 자식의 크기가 다를때 이걸 적용할 것.
   width: 100%;
   left: 50% !important;
   top: 50% !important;
   transform: translate(-50%,-50%) !important;
-
+ */
   /* 
     width: 100%; 
     left: 0px !important;
     top: 0px !important;
   */
-}
+
 
 .main-title::before{
   content: '';
@@ -112,7 +112,7 @@
   padding: 10px;
   font-weight: bold;
   font-size: 1.1em;
-  color: rgba(255,255,255,0.9);
+  color: rgba(255,255,255,1);
   border-radius: 15px;
   background-color: var(--main-color);
 }
@@ -160,4 +160,250 @@
 .home-section1 li.active img{
   -webkit-mask-size: 100%;
   mask-size: 100%;
+}
+
+
+/* ------------------------------------------section2 */
+
+.home-section2{
+  background-image: url(../img/background1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.home-section2 .main-title{
+  background-color: rgba(255,255,255,0.5);
+  width: 30%;
+  min-width: 280px;
+  margin: 30px auto;
+  padding: 10px 0;
+  border-radius: 15px;
+}
+
+.home-section2 .main-title p{
+  color: #fff;
+  text-shadow: 1px 1px 0 #777;
+}
+
+@media (hover:none) and (pointer:cursor){
+  .home-section2{
+    background-attachment: scroll;
+  }
+}
+
+.home-section2 .inner{
+  width: 95%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.home-section2 .inner ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.home-section2 .inner ul li{
+  box-sizing: border-box;
+  padding: 20px;
+  max-width: 300px;
+}
+.home-section2 .inner ul li a{
+  display: block;
+  position: relative;
+  width: 100%;
+
+}
+.home-section2 .inner ul li a::before{
+  content: '';
+  display: block;
+  padding-top: 100%;
+}
+
+.home-section2 .inner ul li a svg{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(1.15);
+}
+.home-section2 .inner ul li a svg path{
+  stroke: var(--main-color);
+  stroke-width: 5px;
+  stroke-linecap: round;
+}
+
+.home-section2 .inner ul li a .textbox{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  border-radius: 50%;
+
+
+}
+
+.home-section2 .inner ul li a .textbox i{
+  font-size: 2em;
+}
+
+.home-section2 .inner ul li a .textbox h3{
+  margin: 7px 0;
+  font-weight: 700;
+}
+
+.home-section2 .inner ul li a .textbox p{
+
+}
+
+
+@media screen and (min-width:1000px) {
+  .home-section2 .inner ul li{
+    width: 25%;
+  }
+}/* lg */
+@media screen and (min-width:500px) and (max-width:1000px) {
+  .home-section2 .inner ul li{
+    width: 50%;
+  }
+  
+}/* md */
+
+@media screen and (max-width:500px) {
+  .home-section2 .inner ul li{
+    width: 100%;
+  }
+  
+}/* sm */
+
+/* ------------------------------home-section2 motion */
+
+.home-section2 li .textbox *{
+  color: var(--main-color);
+  transition: all 1s;
+}
+
+.home-section2 li.active .textbox *{
+  color: #fff;
+  transition-delay: 1s;
+}
+
+.home-section2 li svg path{
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  fill: #fff;
+  transition: stroke-dashoffset 1s, fill 1s;
+  transform-origin: center;/* svg path 는 축이 왼쪽 탑임. 가운데로 바꿔줘야함 */
+  animation: rot 30s linear infinite;
+  transition-delay: 0s , 0s;
+}
+.home-section2 li.active svg path{
+  stroke-dashoffset: 0;
+  fill: var(--main-color);
+  transition-delay: 0s , 1s;
+}
+
+@keyframes rot{
+  0%{
+    transform: rotate(0deg);
+  }
+
+  100%{
+    transform: rotate(180deg);
+  }
+}
+
+
+/* --------------------------------------home-section3 */
+
+
+.home-section3{
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.home-section3 ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.home-section3 ul li{
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.home-section3 ul li a{
+  display: block;
+  padding: 5px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.home-section3 ul li a .inner{
+  position: relative;
+
+}
+
+.home-section3 ul li a .inner figure{
+
+}
+
+.home-section3 ul li a .inner figure img{
+  width: 100%;
+}
+.home-section3 ul li a .inner h3{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: rgba(0,0,0,0.5);
+}
+
+@media screen and (min-width:1000px) {
+  .home-section3 ul li{width: 16.66%;}
+}/* lg */
+@media screen and (min-width:600px) and (max-width:1000px) {
+  .home-section3 ul li{width: 33.33%;}
+  
+}/* md */
+@media screen and (max-width:600px) {
+  .home-section3 ul li{width: 50%;}
+  
+}/* sm */
+
+/* --------------home-section3 motion */
+
+.home-section3 li h3{
+  color: #ddd;
+  font-weight: 400;
+  opacity: 1;
+  transition: all 0.3s;
+}
+.home-section3 li:hover h3{
+  opacity: 0;
+}
+
+.home-section3 li .inner{
+  overflow: hidden;
+}
+
+.home-section3 li figure{
+  transition: all 0.3s;
+}
+
+.home-section3 li:hover figure{
+  transform: scale(1.2);
 }

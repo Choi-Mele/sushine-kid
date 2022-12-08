@@ -53,7 +53,7 @@
   padding: 7px;
   border-radius: 10px;
   text-align: center;
-  background: var(--dark-color);
+  background: var(--main-color);
   color: #fff;
 }
 .isotope-gallery-section ul li a p{
@@ -62,7 +62,7 @@
   border-radius: 10px;
   text-align: center;
   font-size: 0.9em;
-  background: #777;
+  background: rgba(0,0,0,0.3);
   color: #fff;
 }
 

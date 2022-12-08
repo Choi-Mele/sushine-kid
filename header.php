@@ -26,6 +26,7 @@
   <!-- J.S -->
   <script src="./js/common.js"></script> <!-- 모든 JS의 위에 적용 -->
   <script src="./js/header.js"></script>
+  <script src="./js/preloader.js"></script>
  
   <!-- CSS Main -->
   <link rel="stylesheet" href="./css/reset.css">
@@ -33,14 +34,17 @@
   <link rel="stylesheet" href="./css/board.css">
   <link rel="stylesheet" href="./css/header.css">
   <link rel="stylesheet" href="./css/footer.css">
+  <!-- CSS PlugIn -->
   <link rel="stylesheet" href="./css/animation.css">
   <link rel="stylesheet" href="./css/viewbox.css">
   <link rel="stylesheet" href="./css/justifiedGallery.min.css">
   <link rel="stylesheet" href="./css/isotope.css">
   <link rel="stylesheet" href="./css/bubble-particle.css">
   <!-- CSS Sub -->
-  <link rel="stylesheet" href="./css/login.css">
+  <link rel="stylesheet" href="./css/preloader.css">
+  <link rel="stylesheet" href="./css/popup.css">
   <link rel="stylesheet" href="./css/home.css">
+  <link rel="stylesheet" href="./css/login.css">
   <link rel="stylesheet" href="./css/home-visual.css">
   <link rel="stylesheet" href="./css/sub-video.css">
   <link rel="stylesheet" href="./css/sub-layout.css">
@@ -59,6 +63,7 @@
   <title>템플릿 사이트 제작</title>
 </head>
 <body>
+  <?php include "preloader.php" ?>
   <header>
     <nav class="member-state">
       <ul>
@@ -93,6 +98,6 @@
     </nav>
 
     <button class="top-btn">
-    <i class="fa-solid fa-angles-up"></i>
+      <i class="fa-solid fa-angles-up"></i>
     </button>
   </header>
