@@ -4,9 +4,9 @@ $(function () {
 
   /* -----------------section1 motion ------------------------ */
   
-  var type1 = new Type_effect('.home-section1 h2',100)
-  var type2 = new Type_effect('.home-section2 h2',100)
-  var type3 = new Type_effect('.home-section3 h2',100)
+  var type1 = new Type_effect('.home-section1 h2',70)
+  var type2 = new Type_effect('.home-section2 h2',70)
+  var type3 = new Type_effect('.home-section3 h2',70)
  
   type1.play()
 

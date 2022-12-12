@@ -34,7 +34,7 @@ window.addEventListener(
   function (e) {
     e.preventDefault(); /* 브라우져 휠의 사용성을 없앤다 // 다만 passive : false를 써야 작동이 가능*/
     delta = e.wheelDeltaY / -120; /* 휠방향과 scrY와의 부호일치 */
-    scrSpeed += 20 * delta;
+    scrSpeed += 40 * delta;
   },
   { passive: false }
   );
