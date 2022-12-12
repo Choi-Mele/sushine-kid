@@ -20,8 +20,8 @@
       <button></button>
       <button></button>
     </div><!-- indicator -->
-    <button class="cursor prev"><i class="fa-solid fa-arrow-left"></i></button>
-    <button class="cursor next"><i class="fa-solid fa-arrow-right"></i></button>
+    <button class="cursor prev"><i class="fa-solid fa-play"></i></button>
+    <button class="cursor next"><i class="fa-solid fa-play"></i></button>
   </div><!-- slider -->
 </section>
 

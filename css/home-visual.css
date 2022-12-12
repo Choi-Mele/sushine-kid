@@ -75,6 +75,8 @@
 }
 
 .home-visual .slider .prev{left: 2%;}
+.home-visual .slider .prev i{ transform: rotate(180deg);}
+
 .home-visual .slider .next{right: 2%;}
 
 

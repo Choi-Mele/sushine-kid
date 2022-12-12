@@ -155,7 +155,7 @@
 .sub-visual .controls button.active{
   opacity: 1;
   background: var(--sub-color);
-  transform: scale(1.2);
+  transform: scale(1.1);
   box-shadow: 1px 1px 0 var(--dark-color);
 }
 

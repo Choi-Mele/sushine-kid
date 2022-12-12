@@ -64,7 +64,7 @@ $(function(){
     var menuLabel = $(`.snb .menu${category}-${menu}`).text()
     $(`.breadcrumb .menu-label`).text(menuLabel)
 
-    /* $(`.sub-visual .visual${category}`).show()// .addClass('active') figure : display:none인객체를 show()라고 해서 바로 켜지게되면 addClass(모션이)가 적용이 안됨 
+/*     $(`.sub-visual .visual${category}`).show()// .addClass('active') figure : display:none인객체를 show()라고 해서 바로 켜지게되면 addClass(모션이)가 적용이 안됨 
     setTimeout(function(){
       $(`.sub-visual .visual${category}`).addClass('active')
     },1) */
@@ -89,7 +89,7 @@ $(function(){
       $('.sub-visual figure').stop().fadeOut().removeClass('active')
       $(`.sub-visual .visual${n}`).stop().fadeIn().addClass('active')
       $(`.sub-visual .controls button`).removeClass('active')
-      $(`.sub-visual .controls btn${n}`).addClass('active')
+      $(`.sub-visual .controls .btn${n}`).addClass('active')
     }
     
     function fnClickCtrls(){
