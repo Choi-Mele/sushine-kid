@@ -7,9 +7,9 @@
 
     <img class="slider-bg" src="./img/background.jpg" alt="">
 
-    <div class="bubble bubble-particle">
+<!--     <div class="bubble bubble-particle">
 
-    </div>
+    </div> -->
 
     <div class="col_width">
     </div><!-- col_width -->
