@@ -24,4 +24,11 @@ $(function(){
 		})//resize
 	})//load
 
+	$('.isotope-gallery-section>ul>li>a>figure').mouseenter(function(){
+		$(this).siblings('p').addClass('active')
+	})
+	$('.isotope-gallery-section ul li a figure').mouseleave(function(){
+		$(this).siblings('p').removeClass('active')
+	})
+
 })//document.ready

@@ -12,12 +12,12 @@
   galleryArr.forEach((v) => {
     $('.justify-gallery-section .justify-gallery').append(`
           <a href="#">
-            <figure>
-              <img src="${v.path2}">
-            </figure>
+            <img src="${v.path2}">
             <div>${v.desc}</div>
           </a>
        `) //append
   }) //forEach
+
+
 </script>
 <?php include "sub_footer.php" ?>

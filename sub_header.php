@@ -20,12 +20,12 @@
   </script>
   
   <div class="youtube">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/6u9sR_PLJN0?&playlist=6u9sR_PLJN0&vq=highres&iv_load_policy=3&autoplay=1&mute=1&loop=1&rel=0&showinfo=0&color=white&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560px" height="315px" src="https://www.youtube.com/embed/6T5LlkZ9NAA?&playlist=6T5LlkZ9NAA&vq=highres&iv_load_policy=3&autoplay=1&mute=1&loop=1&rel=0&showinfo=0&color=white&controls=0" allowfullscreen></iframe>
     <img src="./img/youtube/560315.jpg">
   </div>
   
-  <button class="indicator prev"><i class="fa-solid fa-arrow-left"></i></button>
-  <button class="indicator next"><i class="fa-solid fa-arrow-right"></i></button>
+  <button class="indicator prev"><i class="fa-solid fa-play"></i></button>
+  <button class="indicator next"><i class="fa-solid fa-play"></i></button>
   
   <div class="controls">
     <button class="btn1 active" value="1"></button>

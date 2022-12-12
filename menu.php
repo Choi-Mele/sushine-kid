@@ -54,7 +54,7 @@
             <em>마이페이지 <i class="fa-solid fa-right-to-bracket"></i></em>
             <ul>
               <li>
-                <a class="menu6-1" href="./registration.php">회원가입</a>
+                <a class="menu6-1" href="#">회원가입</a>
               </li>
               <li>
                 <a class="menu6-2" href="./login.php">Login</a>

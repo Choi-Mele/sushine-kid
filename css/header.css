@@ -44,6 +44,10 @@ header .member-state>ul>li>a::after{
   content: ' | ';
 }
 
+header .member-state>ul>li:last-child>a::after{
+  content: '';
+}
+
 header div.inner{
   display: flex;
   width: 95%;

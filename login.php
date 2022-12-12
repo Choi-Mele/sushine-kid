@@ -29,7 +29,7 @@
                </div><!-- inner-box -->
           </div><!-- login-box -->
           <ul class="question">
-               <li class="weak registration"><a href="./registration.php"> 회원가입</a></li>
+               <li class="weak registration"><a href="#"> 회원가입</a></li>
                <li class="weak find-id"><a href="#"> 아이디 찾기</a></li>
                <li class="weak find-pw"><a href="#"> 비밀번호 찾기</a></li>
           </ul>

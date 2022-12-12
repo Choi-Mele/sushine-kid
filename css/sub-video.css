@@ -1,23 +1,23 @@
 
 .video-section .video-container{
   position: sticky;
+  top: 55px;
   z-index: 3;
   max-width: 800px;
   margin: 0 auto;
   margin-bottom: 30px;
   box-sizing: border-box;
-  border: 5px solid var(--main-color);
   box-shadow: 0 0 20px rgba(0,0,0,0.4);
 }
 
 @media screen and (min-width:1000px) {
   .video-section .video-container{
-    top: 75px;
+    top: 45px;
   }
 }
 @media screen and (max-width:1000px) {
   .video-section .video-container{
-    top: 85px;
+    top: 55px;
   }
 }
 

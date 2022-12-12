@@ -69,8 +69,8 @@
       <ul>
         <li><a href="./index.php">처음으로</a></li>
         <li><a href="./login.php">로그인</a></li>
-        <li><a href="">회원가입</a></li>
-        <li><a href="">북마크</a></li>
+        <li><a href="#">회원가입</a></li>
+        <li><a href="#" id="favorite">즐겨찾기추가</a></li>
       </ul>
     </nav>
 

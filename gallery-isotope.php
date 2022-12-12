@@ -11,6 +11,12 @@
     <button value=".category2" >category2</button>
     <button value=".category3" >category3</button>
   </div>
+  <div class="btn-grp btn-grp-sm">
+    <button  value="*" class="active">a</button>
+    <button value=".category1" >c1</button>
+    <button value=".category2" >c2</button>
+    <button value=".category3" >c3</button>
+  </div>
 </section>
 <script>
   $('.isotope-gallery-section').append(`<ul></ul>`)

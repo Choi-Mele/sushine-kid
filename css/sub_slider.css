@@ -124,15 +124,17 @@
   transform: translateY(-50%);
   font-size: 2em;
   color: #fff;
-  text-shadow: 1px 1px 0 var(--dark-color)
+  text-shadow: 1px 1px 0 var(--dark-color);
+  opacity: 0.7;
+  transition: all 0.3s;
+}
+.sub-visual .indicator:hover{
+  opacity: 1;
 }
 
-.sub-visual .prev{
-  left: 3%;
-}
-.sub-visual .next{
-  right: 3%;
-}
+.sub-visual .prev{ left: 3%; }
+.sub-visual .prev i { transform: scaleX(-1); }
+.sub-visual .next{ right: 3%; }
 
 .sub-visual .controls{
   position: absolute;
@@ -176,6 +178,12 @@
 
 /* -------- Youtube */
 
+@media screen and (max-width:1000px){
+  .sub-visual .youtube{
+    display: none;
+  }
+
+}
 
 .sub-visual .youtube{
   position: relative;

@@ -1,4 +1,8 @@
 
+input::placeholder{
+  color: rgba(50,50,50,0.3);
+}
+
 .contact-section form p{
   display: flex;
   flex-wrap: wrap;
@@ -13,12 +17,21 @@
   transition: all 0.3s;
 }
 
+.contact-section form p textarea{
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+}
+
+.contact-section form p textarea::placeholder{
+  color: rgba(50,50,50,0.3);
+}
+
 .contact-section form p input:focus,
 .contact-section form p textarea:focus{
   background: var(--sub-color);
   color: #fff;
   border: none;
-
 }
 
 .contact-section form p:last-child{
@@ -35,13 +48,55 @@
   border: none;
 }
 
-.contact-section form p:nth-of-type(2) input{
-  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
-
+.contact-section form p:nth-of-type(2) span{
+  width: 80%;
 }
 
+.contact-section form p:nth-of-type(2) span input{
+  width: 16%;
+  border-bottom: 1px dashed #ccc;
 
+}
+.contact-section form p:nth-of-type(2) span input:first-child{
+  width: 13%;
+}
 
+.contact-section form .filebox{
+  padding: 10px;
+  text-align: center;
+}
+
+.contact-section form .filebox .upload-name {
+  display: inline-block;
+  width: 58.5%;
+  height: 40px;
+  padding: 0 10px;
+  vertical-align: middle;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  color: #999;
+  text-overflow: ellipsis;
+}
+
+.contact-section form .filebox label {
+  display: inline-block;
+  padding: 5px 10px;
+  margin-left: 10px;
+  border-radius: 5px;
+  vertical-align: middle;
+  color: #fff;
+  background-color: #999999;
+  cursor: pointer;
+}
+
+.contact-section form .filebox input[type="file"] {
+  position: absolute;
+  width: 0;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+}
 
 @media screen and (min-width:800px) {
   .contact-section form p label{
@@ -56,6 +111,7 @@
 @media screen and (max-width:800px) {
   .contact-section form p label{
     width: 100%;
+    padding-top: 7px;
     color: var(--sub-color);
   }
 
