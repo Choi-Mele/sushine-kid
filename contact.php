@@ -31,7 +31,7 @@
           </p>
           
           <div class="filebox">
-               <input class="upload-name" value="첨부파일" placeholder="첨부파일">
+               <input class="upload-name" value="첨부파일을 추가하면 경로가 표시돼요" placeholder="첨부파일">
                <label for="file">파일찾기</label>
                <input type="file" id="file">
           </div>
