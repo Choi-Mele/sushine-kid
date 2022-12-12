@@ -6,13 +6,13 @@
           <h3 class="hidden">로그인박스</h3>
 
           <div class="login-box">
-               <p> LOGIN</p>
+               <p> L  O  G  I  N</p>
                <div class="inner-box">
                     <div class="input-row">
-                         <span><i class="fa-regular fa-address-card"></i></span> <input type="id" title="아이디">
+                         <span>ID</span> <input type="id" title="아이디" placeholder="아이디">
                     </div>
                     <div class="input-row">
-                         <span><i class="fa-solid fa-key"></i></span> <input type="password" title="패스워드">
+                         <span>PW</span> <input type="password" title="패스워드" placeholder="패스워드">
                     </div>
                     <div class="input-select">
                          <input type="checkbox"> <span class="weak">로그인 상태 유지</span>
