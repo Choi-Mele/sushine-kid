@@ -14,7 +14,7 @@
   border-radius: 30px;
   color: var(--main-color);
   background: rgba(255, 255, 255, 0.9);
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 
 .isotope-gallery-section .btn-grp button.active {
@@ -23,17 +23,17 @@
 }
 
 @media screen and (min-width: 600px) {
-  .isotope-gallery-section .btn-grp-sm {
+  .isotope-gallery-section .btn-grp .sm {
     display: none !important;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .isotope-gallery-section .btn-grp-lg {
+  .isotope-gallery-section .btn-grp .lg {
     display: none !important ;
   }
   
-  .isotope-gallery-section .btn-grp-sm button {
+  .isotope-gallery-section .btn-grp button{
     box-sizing: border-box;
     text-transform: uppercase;
     width: 50px;

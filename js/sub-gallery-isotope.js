@@ -15,9 +15,13 @@ $(function(){
 		}//fn
 		$('.btn-grp button').click(function(){
 			filterSelect = $(this).val()
+
 			fn_isotope()
+
       $('.btn-grp button').removeClass('active')
-      $(this).addClass('active')
+			$(this).addClass('active')
+
+
 		})//click	
 		$(window).resize(function(){
 			fn_isotope()

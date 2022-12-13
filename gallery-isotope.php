@@ -5,17 +5,23 @@
 <h2 class="sub-title"> 갤러리 (Isotope)</h2>
 
 <section class="isotope-gallery-section">
-  <div class="btn-grp btn-grp-lg">
-    <button  value="*" class="active">all</button>
-    <button value=".category1" >category1</button>
-    <button value=".category2" >category2</button>
-    <button value=".category3" >category3</button>
-  </div>
-  <div class="btn-grp btn-grp-sm">
-    <button  value="*" class="active">a</button>
-    <button value=".category1" >c1</button>
-    <button value=".category2" >c2</button>
-    <button value=".category3" >c3</button>
+  <div class="btn-grp">
+    <button  value="*" class="active">
+      <span class="lg">all</span>
+      <span class="sm">A</span>
+    </button>
+    <button value=".category1" >
+      <span class="lg">category1</span>
+      <span class="sm">C1</span>
+    </button>
+    <button value=".category2" >
+      <span class="lg">category2</span>
+      <span class="sm">C2</span>
+    </button>
+    <button value=".category3" >
+      <span class="lg">category3</span>
+      <span class="sm">C3</span>
+    </button>
   </div>
 </section>
 <script>
