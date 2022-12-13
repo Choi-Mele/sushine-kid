@@ -8,6 +8,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+  <!-- ICON -->
+  <link rel="icon logo" href="./favicon.ico">
   <!-- J.S -->
   <script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
   <script src="https://kit.fontawesome.com/6c43c79475.js" crossorigin="anonymous"></script>
